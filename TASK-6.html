@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="image-gallery">
+
+    <img src="https://th.bing.com/th/id/OIP.lZ2ihgGZX974Pw0lHQLIgwHaFj?w=291&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Gallery Image 4" class="gallery-image" onclick="openModal(this.src)">
+    <img src="https://th.bing.com/th/id/OIP.YFsfxGZu_jk7Hlj5Qr7ghgHaFb?w=256&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Gallery Image 5" class="gallery-image" onclick="openModal(this.src)">
+    <img src="https://th.bing.com/th/id/OIP.Ln2wS_Glu9IFw-_Gm3qlYgHaE8?w=240&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Gallery Image 6" class="gallery-image" onclick="openModal(this.src)">
+    <img src="https://th.bing.com/th/id/OIP.U0SfqHcCr4A3TEW4cIDGOQHaEI?w=299&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Gallery Image 6" class="gallery-image" onclick="openModal(this.src)">
+  </div>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div class="navigation">
+      <button onclick="navigateImages(-1)">&#10094;</button>
+      <button onclick="navigateImages(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
